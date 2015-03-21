@@ -17,8 +17,4 @@ Pod::Spec.new do |s|
 
   s.framework	 = 'Foundation', 'UIKit', 'CoreGraphics', 'QuartzCore', 'Security', 'CFNetwork'
 
-  s.dependency 'AFNetworking'
-  s.dependency 'EGOCache'
-  s.dependency 'UAProgressView'
-
 end
