@@ -109,7 +109,7 @@
         }
         else {
             [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^{
-                self.frame = CGRectMake(0.0f, self.superview.frame.size.height - self.frame.size.height, self.frame.size.width, self.frame.size.height);
+                self.frame = CGRectMake(0.0f, self.superview.frame.size.height - self.frame.size.height - 44, self.frame.size.width, self.frame.size.height);
             } completion:nil];
         }
     }
@@ -121,7 +121,7 @@
 }
 
 - (void) adjustTextViewSize:(CGRect)imageViewControllerBounds {
-    self.frame = CGRectMake(0.0f, imageViewControllerBounds.size.height - 40.0f, imageViewControllerBounds.size.width, 40.0f);
+    self.frame = CGRectMake(0.0f, imageViewControllerBounds.size.height - 40.0f - 44.f, imageViewControllerBounds.size.width, 40.0f);
 }
 
 - (void)adjustFontSizeToFit {

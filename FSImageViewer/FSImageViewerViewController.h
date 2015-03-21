@@ -39,6 +39,9 @@
 - (void)imageViewerViewController:(FSImageViewerViewController *)imageViewerViewController willDismissViewControllerAnimated:(BOOL)animated;
 - (void)imageViewerViewController:(FSImageViewerViewController *)imageViewerViewController didDismissViewControllerAnimated:(BOOL)animated;
 
+// Called if misc-toolbar button clicked.
+- (void)handleSALeMiscButton:(UIButton *)sender withAction:(NSString *)actionString;
+
 @end
 
 /// FSImageViewerViewController is an UIViewController which can present images.
@@ -56,6 +59,15 @@
 
 /// Title
 @property(strong, nonatomic) UIView<FSTitleView>* titleView;
+
+/// Misc-ToolBar
+@property (nonatomic, strong) UIView *miscToolBarView;
+
+// favorite
+@property (nonatomic, strong) UIButton *favoriteButton;
+
+// like
+@property (nonatomic, strong) UIButton *likeButton;
 
 /// Optional Delegate
 @property(weak, nonatomic) id<FSImageViewerViewControllerDelegate> delegate;

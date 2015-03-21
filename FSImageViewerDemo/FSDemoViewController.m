@@ -71,4 +71,10 @@
 - (void)imageViewerViewController:(FSImageViewerViewController *)imageViewerViewController didMoveToImageAtIndex:(NSInteger)index {
     NSLog(@"FSImageViewerViewController: %@ didMoveToImageAtIndex: %li",imageViewerViewController, (long)index);
 }
+
+- (void)handleSALeMiscButton:(UIButton *)sender withAction:(NSString *)actionString
+{
+  NSLog(@"clicked -> %@", actionString);
+}
+
 @end
